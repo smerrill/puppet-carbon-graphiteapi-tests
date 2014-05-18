@@ -1,0 +1,36 @@
+FORGE
+  remote: http://forge.puppetlabs.com
+  specs:
+    ajcrowe/supervisord (0.3.2)
+      puppetlabs/concat (< 2.0.0, >= 1.0.0)
+      puppetlabs/stdlib (>= 4.1.0)
+    puppetlabs/concat (1.1.0)
+      puppetlabs/stdlib (>= 4.0.0)
+    puppetlabs/stdlib (4.2.1)
+    stahnma/epel (0.0.6)
+    stankevich/python (1.7.5)
+
+GIT
+  remote: git://github.com/smerrill/puppet-carbon.git
+  ref: master
+  sha: b5c29c3d0ec6c2199a3c3fff5217d291a8536e3b
+  specs:
+    stevenmerrill/carbon (0.1.0)
+      puppetlabs/stdlib (>= 3.2.0)
+      stahnma/epel (~> 0.0.6)
+
+GIT
+  remote: git://github.com/smerrill/puppet-graphiteapi.git
+  ref: master
+  sha: 1986d27461b84cc220425849efb87aa386141d7d
+  specs:
+    stevenmerrill/graphite (0.1.0)
+      ajcrowe/supervisord (~> 0.3.2)
+      puppetlabs/stdlib (>= 3.2.0)
+      stahnma/epel (~> 0.0.6)
+      stankevich/python (~> 1.7.5)
+
+DEPENDENCIES
+  stevenmerrill/carbon (>= 0)
+  stevenmerrill/graphite (>= 0)
+
