@@ -2,3 +2,4 @@
 modules/
 *.swo
 *.swp
+Puppetfile.lock
