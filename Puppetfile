@@ -7,7 +7,7 @@ forge "http://forge.puppetlabs.com"
 
 # mod 'puppetlabs/stdlib'
 
-mod 'stevenmerrill/graphite',
+mod 'stevenmerrill/graphiteapi',
   :git => 'git://github.com/smerrill/puppet-graphiteapi.git'
 
 mod 'stevenmerrill/carbon',

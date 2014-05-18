@@ -10,6 +10,8 @@ Vagrant.configure("2") do |config|
 
   config.vm.synced_folder "modules", "/etc/puppet/modules"
 
-  config.vm.provision :puppet
+  config.vm.provision :puppet do |puppet|
+    puppet.hiera_config_path = "hiera.yaml"
+  end
 end
 
