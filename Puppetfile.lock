@@ -1,0 +1,24 @@
+FORGE
+  remote: http://forge.puppetlabs.com
+  specs:
+    ajcrowe/supervisord (0.3.2)
+      puppetlabs/concat (< 2.0.0, >= 1.0.0)
+      puppetlabs/stdlib (>= 4.1.0)
+    puppetlabs/concat (1.1.0)
+      puppetlabs/stdlib (>= 4.0.0)
+    puppetlabs/stdlib (4.2.1)
+    stahnma/epel (0.0.6)
+    stankevich/python (1.7.5)
+    stevenmerrill/carbon (0.1.0)
+      puppetlabs/stdlib (>= 3.2.0)
+      stahnma/epel (~> 0.0.6)
+    stevenmerrill/graphiteapi (0.1.0)
+      ajcrowe/supervisord (~> 0.3.2)
+      puppetlabs/stdlib (>= 3.2.0)
+      stahnma/epel (~> 0.0.6)
+      stankevich/python (~> 1.7.5)
+
+DEPENDENCIES
+  stevenmerrill/carbon (~> 0.1.0)
+  stevenmerrill/graphiteapi (~> 0.1.0)
+
